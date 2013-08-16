@@ -114,11 +114,11 @@ class Controller
 			$this->template = 'login';
 		}
 		$formData['username'] = isset($formData['username'])
-		                      ? trim(htmlspecialchars($formData['username'], ENT_QUOTES, 'UTF-8'))
-		                      : '';
+							  ? trim(htmlspecialchars($formData['username'], ENT_QUOTES, 'UTF-8'))
+							  : '';
 		$formData['password'] = isset($formData['password'])
-		                      ? trim(htmlspecialchars($formData['password'], ENT_QUOTES, 'UTF-8'))
-		                      : '';
+							  ? trim(htmlspecialchars($formData['password'], ENT_QUOTES, 'UTF-8'))
+							  : '';
 		// Sign up page.
 		if ($this->template == 'signup') {
 			$formData['email'] = isset($formData['email'])
